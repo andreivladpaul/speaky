@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech Converter</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header>
+    <h1>Text to Speech Converter</h1>
+    <p>Transform your text into downloadable MP3 audio</p>
+</header>
+<div class="container">
+    <form action="/convert" method="POST">
+        <textarea name="text" placeholder="Enter your text here..."></textarea>
+        <select name="voice">
+            <option value="Joanna">Joanna (English, US)</option>
+            <option value="Matthew">Matthew (English, US)</option>
+            <option value="Amy">Amy (English, UK)</option>
+            <option value="Brian">Brian (English, UK)</option>
+            <option value="Enrique">Enrique (Spanish, US)</option>
+            <option value="Celine">Celine (French)</option>
+            <!-- Add more voices as needed -->
+        </select>
+        <button type="submit">Convert to MP3</button>
+    </form>
+</div>
+<footer>
+    <p>Made with ❤️ by <a href="#">Vlad</a></p>
+</footer>
+</body>
+</html>
