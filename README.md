@@ -31,6 +31,7 @@ pip install -r requirements.txt
 Create a file named `aws_credentials.json` in the project root and add your AWS credentials:
 
 ATTENTION: I used "us-east-1" as region as it was the default one but you can use an other one.
+
 ```json
 {
   "aws_access_key_id": "your_access_key_id",
@@ -53,12 +54,6 @@ The application will be available at `http://127.0.0.1:5000`.
 3. Select a voice from the dropdown menu.
 4. Click the "Convert to MP3" button.
 5. Download the generated MP3 file.
-
-## Testing AWS Polly
-To verify your AWS Polly setup, you can use the AWS CLI:
-```bash
-aws polly list-voices --region us-east-1
-```
 
 ## Project Structure
 ```
