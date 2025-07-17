@@ -29,6 +29,8 @@ pip install -r requirements.txt
 
 ### 3. Configure AWS Credentials
 Create a file named `aws_credentials.json` in the project root and add your AWS credentials:
+
+ATTENTION: I used "us-east-1" as region as it was the default one but you can use an other one.
 ```json
 {
   "aws_access_key_id": "your_access_key_id",
